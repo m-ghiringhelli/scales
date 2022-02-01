@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import { renderBlazers, renderCoens, renderSandwiches } from './utils.js';
-import { coenMovies, blazerPlayers } from '../data.js';
+import { coenMovies } from '../data.js';
 
 const oneBlazer = {
     name: 'Damian Lillard',
@@ -16,6 +16,16 @@ const oneSandwich = {
         'lettuce',
         'tomato'
     ]
+};
+
+const oneBand = {
+    name: 'Against Me!',
+    yearsActive: '1997-present',
+    favoriteAlbum: {
+        name: 'Reinventing Axl Rose',
+        year: 2002,
+        label: 'No Idea Records'
+    }
 };
 
 const test = QUnit.test;

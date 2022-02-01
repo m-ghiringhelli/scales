@@ -24,8 +24,32 @@ export const blazerPlayers = [
 ];
 
 
-// export const sandwiches = [
-//     {
-//         name: 
-//     }
-// ]
+export const sandwiches = [
+    {
+        name: 'BLT',
+        temperature: 'cold',
+        ingredients: [
+            'bacon',
+            'lettuce',
+            'tomato'
+        ]
+    },
+    {
+        name: 'Grilled Cheese',
+        temperature: 'hot',
+        ingredients: [
+            'butter',
+            'bread',
+            'cheese'
+        ]
+    },
+    {
+        name: 'Patty Melt',
+        temperature: 'warm',
+        ingredients: [
+            'hamburger',
+            'cheese',
+            'onions'
+        ]
+    }
+];
