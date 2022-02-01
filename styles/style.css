@@ -90,12 +90,25 @@ footer {
     box-shadow: var(--shadow);
 }
 
-.animal {
-    height: 300px;
-    width: 200px;
+#blazers-list {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 5px solid var(--color5);
+    border: solid black 3px;
     border-radius: 5px;
+    height: 150px;
+    width: 80%;
+    margin: 20px;
+}
+
+.blazer-player {
+    width: 200px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    border: solid red 3px;
+    border-radius: 5px;
+    margin: 20px;
 }
