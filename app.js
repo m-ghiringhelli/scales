@@ -2,12 +2,16 @@
 import { renderCoens, 
     renderBlazers, 
     renderSandwiches,
-    r } from './test/utils.js';
-import { coenMovies, blazerPlayers, sandwiches } from './data.js';
+    renderBands } from './test/utils.js';
+import { coenMovies, 
+    blazerPlayers, 
+    sandwiches, 
+    bands } from './data.js';
 
 const moviesList = document.getElementById('movies-list');
 const blazersList = document.getElementById('blazers-list');
 const sandwichList = document.getElementById('sandwich-list');
+const bandList = document.getElementById('band-list');
 
 moviesList.append(renderCoens(coenMovies));
 
@@ -21,7 +25,10 @@ for (let sandwich of sandwiches) {
     sandwichList.append(div);
 }
 
-
+for (let band of bands) {
+    const div = renderBands(band);
+    bandList.append(div);
+}
 
 
 

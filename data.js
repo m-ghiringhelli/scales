@@ -1,3 +1,34 @@
+export const bands = [
+    {
+        name: 'Against Me!',
+        yearsActive: '1997-present',
+        favoriteAlbum: {
+            name: 'Reinventing Axl Rose',
+            year: 2002,
+            label: 'No Idea Records'
+        }
+    },
+    {
+        name: 'Black Flag',
+        yearsActive: '1976-1986',
+        favoriteAlbum: {
+            name: 'Damaged',
+            year: 1981,
+            label: 'SST'
+        }
+    },
+    {
+        name: 'Bomb the Music Industry!',
+        yearsActive: '2004-2014',
+        favoriteAlbum: {
+            name: 'Goodbye Cool World',
+            year: 2006,
+            label: 'Quote Unquote'
+        }
+    }
+];
+
+
 export const coenMovies = [
     `The Big Lebowski`,
     `O Brother, Where Art Thou?`,
