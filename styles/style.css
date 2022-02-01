@@ -128,7 +128,9 @@ footer {
 .band {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 10px;
+    padding: 3px;
+    height: 95%;
 }

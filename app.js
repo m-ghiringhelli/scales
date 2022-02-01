@@ -1,5 +1,8 @@
 // import functions and grab DOM elements
-import { renderCoens, renderBlazers, renderSandwiches } from './test/utils.js';
+import { renderCoens, 
+    renderBlazers, 
+    renderSandwiches,
+    r } from './test/utils.js';
 import { coenMovies, blazerPlayers, sandwiches } from './data.js';
 
 const moviesList = document.getElementById('movies-list');
@@ -17,6 +20,7 @@ for (let sandwich of sandwiches) {
     const div = renderSandwiches(sandwich);
     sandwichList.append(div);
 }
+
 
 
 

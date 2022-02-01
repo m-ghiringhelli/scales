@@ -1,5 +1,8 @@
 // IMPORT MODULES under test here:
-import { renderBlazers, renderCoens, renderSandwiches } from './utils.js';
+import { renderBlazers, 
+    renderCoens, 
+    renderSandwiches,
+    renderBands } from './utils.js';
 import { coenMovies } from '../data.js';
 
 const oneBlazer = {
@@ -29,6 +32,12 @@ const oneBand = {
 };
 
 const test = QUnit.test;
+
+test('renderBands() should create html element to render band on page', (expect) => {
+    const expected = `<div class="band"><h3>AGAINST ME!</h3><span>Years Active: 1997-present</span><ul>Best Album: <li>Reinventing Axl Rose</li><li>2002</li><li>No Idea Records</li></ul></div>`;
+    const actual = renderBands(oneBand);
+    expect.equal(actual.outerHTML, expected);
+});
 
 test('renderSandwiches() should display sandwiches, ingredients, etc', (expect) => {
     const expected = `<div class="sandwich"><h3>BLT</h3><span>A cold sandwich</span><ul>Ingredients<li>bacon</li><li>lettuce</li><li>tomato</li></ul></div>`;

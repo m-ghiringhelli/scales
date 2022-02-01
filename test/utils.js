@@ -1,4 +1,22 @@
 //import { blazersList } from "../data";
+export function renderBands(band) {
+    const div = document.createElement('div');
+    div.classList = 'band';
+    const h3 = document.createElement('h3');
+    h3.textContent = band.name.toUpperCase();
+    const span = document.createElement('span');
+    span.textContent = `Years Active: ${band.yearsActive}`;
+    const ul = document.createElement('ul');
+    ul.textContent = 'Best Album: ';
+    for (let property in band.favoriteAlbum) {
+        const li = document.createElement('li');
+        li.textContent = `${band.favoriteAlbum[property]}`;
+        ul.append(li);
+    }
+    div.append(h3, span, ul);
+    return div;
+}
+
 export function renderSandwiches(sandwich) {
     const div = document.createElement('div');
     div.classList = 'sandwich';
