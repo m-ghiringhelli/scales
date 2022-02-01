@@ -90,13 +90,13 @@ footer {
     box-shadow: var(--shadow);
 }
 
-#blazers-list {
+.list {
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid black 3px;
     border-radius: 5px;
-    height: 150px;
+    height: 200px;
     width: 80%;
     margin: 20px;
 }
@@ -111,4 +111,15 @@ footer {
     border: solid red 3px;
     border-radius: 5px;
     margin: 20px;
+}
+
+.sandwich {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 3px solid white;
+    width: 150px;
+    list-style: inside;
 }

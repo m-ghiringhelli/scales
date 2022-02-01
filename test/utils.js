@@ -1,4 +1,21 @@
 //import { blazersList } from "../data";
+export function renderSandwiches(sandwich) {
+    const div = document.createElement('div');
+    div.classList = 'sandwich';
+    const h3 = document.createElement('h3');
+    h3.textContent = sandwich.name;
+    const span = document.createElement('span');
+    span.textContent = `A ${sandwich.temperature} sandwich`;
+    const ul = document.createElement('ul');
+    ul.textContent = 'Ingredients';
+    for (let ingredient of sandwich.ingredients) {
+        const li = document.createElement('li');
+        li.textContent = ingredient;
+        ul.append(li);
+    }
+    div.append(h3, span, ul);
+    return div;
+}
 
 export function renderCoens(films) {
     const ul = document.createElement('ul');

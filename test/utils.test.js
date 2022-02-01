@@ -1,8 +1,32 @@
 // IMPORT MODULES under test here:
-import { renderBlazers, renderCoens } from './utils.js';
+import { renderBlazers, renderCoens, renderSandwiches } from './utils.js';
 import { coenMovies, blazerPlayers } from '../data.js';
 
+const oneBlazer = {
+    name: 'Damian Lillard',
+    height: `6' 2"`,
+    college: 'Weber State',
+};
+
+const oneSandwich = {
+    name: 'BLT',
+    temperature: 'cold',
+    ingredients: [
+        'bacon',
+        'lettuce',
+        'tomato'
+    ]
+};
+
 const test = QUnit.test;
+
+test('renderSandwiches() should display sandwiches, ingredients, etc', (expect) => {
+    const expected = `<div class="sandwich"><h3>BLT</h3><span>A cold sandwich</span><ul>Ingredients<li>bacon</li><li>lettuce</li><li>tomato</li></ul></div>`;
+
+    const actual = renderSandwiches(oneSandwich);
+
+    expect.equal(actual.outerHTML, expected);
+});
 
 test('renderCoens() should display a list of coen bros. movies', (expect) => {
     //Arrange
@@ -25,7 +49,7 @@ test('renderBlazers() should display a list of Blazer players', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = renderBlazers(blazerPlayers);
+    const actual = renderBlazers(oneBlazer);
 
     //Expect
     // Make assertions about what is expected versus the actual result
